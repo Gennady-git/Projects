@@ -1,3 +1,2 @@
 # Projects
-VS Projects
-Это исправленная версия 1
+Visual Studio Projects
