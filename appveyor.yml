@@ -155,12 +155,12 @@ install:
 #  - cmd: set MY_VAR=12345
 
 # enable patching of AssemblyInfo.* files
-assembly_info:
-  patch: true
-  file: AssemblyInfo.*
-  assembly_version: "1.0.{build}"
-  assembly_file_version: "{version}"
-  assembly_informational_version: "{version}"
+#assembly_info:
+#  patch: true
+#  file: AssemblyInfo.*
+#  assembly_version: "1.0.{build}"
+#  assembly_file_version: "{version}"
+#  assembly_informational_version: "{version}"
 
 
 # Automatically register private account and/or project AppVeyor NuGet feeds.
@@ -175,7 +175,7 @@ assembly_info:
 #---------------------------------#
 
 # build platform, i.e. x86, x64, Any CPU. This setting is optional.
-platform: Any CPU
+#platform: Any CPU
 
 # to add several platforms to build matrix:
 #platform:
@@ -208,7 +208,7 @@ build:
 #  include_nuget_references: true  # add -IncludeReferencedProjects option while packaging NuGet artifacts
 
   # MSBuild verbosity level
-  verbosity: minimal    #полный набор: quiet|minimal|normal|detailed
+  verbosity: minimal    #ГЇГ®Г«Г­Г»Г© Г­Г ГЎГ®Г°: quiet|minimal|normal|detailed
 
 
 # scripts to run before build
@@ -281,9 +281,9 @@ after_test:
 #      artifacts configuration    #
 #---------------------------------#
 
-artifacts: # любые файлы, необходимые для работы приложения
+artifacts: # Г«ГѕГЎГ»ГҐ ГґГ Г©Г«Г», Г­ГҐГ®ГЎГµГ®Г¤ГЁГ¬Г»ГҐ Г¤Г«Гї Г°Г ГЎГ®ГІГ» ГЇГ°ГЁГ«Г®Г¦ГҐГ­ГЁГї
 
-  # pushing a single file - копирование файла из корневого каталога репозитория
+  # pushing a single file - ГЄГ®ГЇГЁГ°Г®ГўГ Г­ГЁГҐ ГґГ Г©Г«Г  ГЁГ§ ГЄГ®Г°Г­ГҐГўГ®ГЈГ® ГЄГ ГІГ Г«Г®ГЈГ  Г°ГҐГЇГ®Г§ГЁГІГ®Г°ГЁГї
 #  - path: test.zip
 
   # pushing a single file with environment variable in path and "Deployment name" specified
@@ -356,7 +356,7 @@ on_finish:
 
 notifications:
 
-  # Email - это можно использовать!
+  # Email - ГЅГІГ® Г¬Г®Г¦Г­Г® ГЁГ±ГЇГ®Г«ГјГ§Г®ГўГ ГІГј!
 #  - provider: Email
 #    to:
 #      - user1@email.com
@@ -372,7 +372,7 @@ notifications:
 #    room: ProjectA
 #    template: "{message}, {commitId}, ..."
 
-  # Slack - а это нужно!
+  # Slack - Г  ГЅГІГ® Г­ГіГ¦Г­Г®!
 #  - provider: Slack
 #    incoming_webhook: http://incoming-webhook-url
 
